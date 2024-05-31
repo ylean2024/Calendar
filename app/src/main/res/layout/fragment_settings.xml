@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/value_16_dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="@dimen/value_18_sp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_48_dp">
+
+        <TextView
+            android:id="@+id/melodyTextView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/melody"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/value_16_dp"/>
+
+        <Spinner
+            android:id="@+id/melodySpinner"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/value_10_dp"
+            android:layout_marginLeft="@dimen/value_16_dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_48_dp">
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="@dimen/value_60_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/language"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/value_16_dp"/>
+
+        <Spinner
+            android:id="@+id/languageSpinner"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/value_10_dp"
+            android:layout_marginLeft="@dimen/value_16_dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_48_dp">
+
+        <TextView
+            android:id="@+id/themeTextView"
+            android:layout_width="@dimen/value_60_dp"
+            android:layout_height="wrap_content"
+            android:text="@string/black_theme"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/value_16_dp"/>
+
+        <Switch
+            android:id="@+id/themeSwitcher"
+            android:layout_width="@dimen/value_0_dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/value_10_dp"
+            android:layout_marginLeft="@dimen/value_16_dp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_60_dp"
+        android:layout_marginTop="@dimen/value_32_dp"
+        style="@style/ButtonStyle"
+        android:text="@string/save"
+        android:layout_gravity="bottom"/>
+
+</LinearLayout>

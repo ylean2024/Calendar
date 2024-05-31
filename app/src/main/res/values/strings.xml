@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Calendar</string>
+    <string name="calendar">Календарь</string>
+    <string name="settings">Настройки</string>
+    <string name="friends">Друзья</string>
+    <string name="search">Поиск</string>
+    <string name="create_event">Создать событие</string>
+    <string name="start">Начало</string>
+    <string name="end">Конец</string>
+    <string name="date">Дата</string>
+    <string name="type_event">Тип события</string>
+    <string name="name_event">Название события</string>
+    <string name="add_new_event">Добавить новое событие</string>
+    <string name="clear">Очистить</string>
+    <string name="melody">Мелодия</string>
+    <string name="language">Язык</string>
+    <string name="save">Сохранить</string>
+    <string name="close">Закрыть</string>
+    <string name="plug_text">Заглушка</string>
+    <string name="placeholder_text">Данные не загружены</string>
+    <string name="refresh_button_text">Обновить</string>
+    <string name="progress_bar_text_loading">Данные загружаются</string>
+    <string name="black_theme">Темная тема</string>
+    <string name="description_event">Описание</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter">Войти</string>
+    <string name="register">Зарегистрироваться</string>
+    <string name="email">Почта</string>
+    <string name="password">Пароль</string>
+    <string name="show_to_all_friends">Показывать всем друзьям?</string>
+    <string name="add">Добавить</string>
+</resources>

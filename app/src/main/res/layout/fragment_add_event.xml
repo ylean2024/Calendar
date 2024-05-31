@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/value_16_dp">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_new_event"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/eventNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_32_dp"
+        android:padding="@dimen/value_10_dp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/name_event"/>
+
+    <EditText
+        android:id="@+id/eventDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_32_dp"
+        android:padding="@dimen/value_10_dp"
+        android:background="@drawable/custom_edit_text"
+        android:hint="@string/description_event"/>
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/value_32_dp"
+        android:hint="@string/date"
+        android:drawableEnd="@drawable/calendar_img_event"
+        style="RecyclerViewSmallText"
+        android:padding="@dimen/value_8_dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_32_dp">
+
+        <EditText
+            android:id="@+id/startTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/value_10_dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:background="@drawable/custom_edit_text"
+            android:drawableEnd="@drawable/time_img"
+            android:layout_marginRight="@dimen/value_16_dp"
+            android:hint="@string/start"/>
+
+        <EditText
+            android:id="@+id/endTimeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/value_10_dp"
+            android:inputType="number"
+            android:maxLines="1"
+            android:background="@drawable/custom_edit_text"
+            android:drawableEnd="@drawable/time_img"
+            android:layout_marginLeft="@dimen/value_16_dp"
+            android:hint="@string/end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/value_16_dp">
+
+        <TextView
+            android:id="@+id/switchTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friends"
+            android:layout_weight="5"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/value_16_dp"/>
+
+        <Switch
+            android:id="@+id/friendsSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingEnd="@dimen/value_16_dp"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/createEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_60_dp"
+        android:layout_marginTop="@dimen/value_16_dp"
+        style="@style/ButtonStyle"
+        android:text="@string/create_event"/>
+
+</LinearLayout>
